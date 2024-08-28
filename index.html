@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto | Oracle + Alura</title>
+
+    <link rel="stylesheet" type="text/css" href="./style/reset.css">
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/Icono.ico">
+
+</head>
+
+<body>
+    <!-- Encabezado con el logo -->
+    <header>
+        <img class="img-logo" src="./img/Logo.svg" alt="Logo de Alura">
+    </header>
+    
+    <main>
+        <!--Sección de ingreso -->
+        <section>
+            <textarea type="text" class="txt-entrada" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="caja-aviso">
+                <img class="img-exclamacion" src="./img/Exclamacion.svg" alt="Signo de aviso">
+                <h6 class="txt-aviso">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="caja-botones">
+                <button type="button" class="btn-encriptar">Encriptar</button>
+                <button type="button" class="btn-desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <!-- Sección de salida -->
+        <section class="rectangulo">
+            <div class="caja-salida">
+                <img class= "img-personaje" src="./img/personaje.svg" alt="personaje desencriptador">
+                <textarea type="text" class="txt-salida" readonly="">Ningún mensaje fue encontrado</textarea>
+                <p class="parrafo-personaje" id="ocultar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="copiar">
+                <button type="submit" class="btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>Oracle ONE | Challenge by <a href="#" target="_blank">developer-haro</a></p>
+    </footer>
+
+    <!-- Vínculo a JS -->
+    <script src="encriptador.js"></script>
+    
+</body>
+</html>
